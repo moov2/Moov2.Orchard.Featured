@@ -1,0 +1,10 @@
+﻿Name: Featured Content
+AntiForgery: enabled
+Author: Moov2
+Website: https://moov2.com
+Version: 0.1
+OrchardVersion: 1.10.2
+Description: Flag content items as featured content.
+Features:
+    Moov2.Orchard.Featured:
+        Description: Flag content items as featured content.
