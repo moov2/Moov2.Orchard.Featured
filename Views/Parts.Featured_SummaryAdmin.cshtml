@@ -1,0 +1,6 @@
+﻿@{
+    var label = Model.Part.IsFeatured ? "Unset Featured" : "Set Featured";
+    var returnUrl = HttpContext.Current.Request.Url.PathAndQuery;
+}
+
+<a href="/Admin/Featured/Toggle/@Model.Part.ContentItem.Id?returnUrl=@returnUrl" title="@T(label)">@T(label)</a>@T(" | ") 

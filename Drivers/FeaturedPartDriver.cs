@@ -29,6 +29,18 @@ namespace Moov2.Orchard.Featured.Drivers
 
         #endregion
 
+        #region Display
+
+        protected override DriverResult Display(FeaturedPart part, string displayType, dynamic shapeHelper)
+        {
+            return Combined(
+                ContentShape("Parts_Featured_SummaryAdmin",
+                    () => shapeHelper.Parts_Featured_SummaryAdmin(Part: part))
+                );
+        }
+
+        #endregion
+
         #region Editor
 
         protected override DriverResult Editor(FeaturedPart part, dynamic shapeHelper)

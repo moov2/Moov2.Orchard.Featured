@@ -1,3 +1,7 @@
 ﻿<Placement>
-    <Place Parts_Featured_Edit="Content:3"/>
+  <Place Parts_Featured_Edit="Content:3"/>
+
+  <Match DisplayType="SummaryAdmin">
+    <Place Parts_Featured_SummaryAdmin="Actions:10"/>
+  </Match>
 </Placement>
