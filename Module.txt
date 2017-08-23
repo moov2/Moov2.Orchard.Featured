@@ -9,3 +9,4 @@ Category: Content
 Features:
     Moov2.Orchard.Featured:
         Description: Flag content items as featured content.
+		Dependencies: Orchard.Projections
