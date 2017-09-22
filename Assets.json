@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "inputs": [
+      "Assets/JavaScript/orchard.featured.admin.js"
+    ],
+    "output": "Scripts/orchard.featured.admin.js"
+  }
+]

@@ -1,6 +1,14 @@
 ﻿@model Moov2.Orchard.Featured.Models.FeaturedPart
 
-<fieldset>
+@{
+    Script.Require("FeaturedAdminJs");
+}
+
+<hr />
+
+<h2>@T("Featured")</h2>
+
+<fieldset class="js-featured-enable-field">
     <span class="checkbox-and-label">
         @Html.CheckBoxFor(m => m.IsFeatured)
         <label for="@Html.FieldIdFor(m => m.IsFeatured)" class="forcheckbox">@T("Set as featured")</label>
@@ -8,7 +16,7 @@
     <span class="hint">@T("Check to promote this content as featured.")</span>
 </fieldset>
 
-<fieldset>
+<fieldset class="js-featured-weight-field">
     <label for="@Html.FieldIdFor(m => m.Weight)">@T("Weight")</label>
     @Html.TextBoxFor(m => m.Weight, new { @class = "text", type = "number" })
     <span class="hint">@T("Used to determine display order, where lowest is displayed first.")</span>
