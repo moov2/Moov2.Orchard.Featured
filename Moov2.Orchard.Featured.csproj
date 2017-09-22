@@ -103,6 +103,8 @@
   <ItemGroup>
     <Content Include="Assets.json" />
     <Content Include="Assets\JavaScript\orchard.featured.admin.js" />
+    <Content Include="Scripts\orchard.featured.admin.js" />
+    <Content Include="Scripts\orchard.featured.admin.min.js" />
     <Content Include="Web.config" />
     <Content Include="Module.txt" />
   </ItemGroup>
